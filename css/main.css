@@ -1,0 +1,168 @@
+
+body {
+    background-color:black;
+
+    font-weight: 400;
+    
+
+ }
+ .bgMain{
+    color:#20c997;
+
+ }
+
+ 
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.home .caption{
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+    height: 100%;
+}
+.home .caption h1{
+   font-weight: 600;
+   font-size: 3.5rem;
+}
+.home .caption h4{
+    font-weight: 300;
+    font-size: 2rem;
+ }
+.icon{
+    border:2px solid #20c997;
+    
+    width: 30px;
+    height: 30px;
+    transition:  background-color  1s;
+}
+.icon:hover a{
+    color:black
+}
+.icon:hover {
+    background-color:#20c997 ;
+}
+.icon a{
+    color:#20c997;
+}
+
+.btn{
+    border:2px solid #20c997;
+
+    background-color: #20c997;
+}
+.btn:hover{
+    background-color: #20c997;
+}
+.imganimation{
+    position:relative;
+    animation-name: moviImage;
+    animation-duration: 3s ;
+    animation-iteration-count: infinite;
+}
+@keyframes moviImage{
+0%{
+    transform:translateY(1.5%);
+}
+50%{
+    transform:translateY(-1.5%);
+}
+100%{
+    transform:translateY(1.5%);
+}
+}
+/* Services */
+
+.Card{
+    border:2px solid rgb(33, 37, 41);
+
+    transition: all 1s;
+    
+}
+.Card:hover {
+    transform: scale(1.02);
+    border-color: #20c997;
+
+  }
+  
+ 
+/* projects */
+
+ .layout{
+    top:100%;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(32, 201, 150, 0.5) ;
+    transition: top .7s;
+}
+.CARD:hover .layout{
+    top:0;
+}
+.icons{
+    width: 30px;
+    height: 30px;
+    background-color : white;
+}
+ .imag .layoutCard{
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,.4) ;
+}
+
+
+.projects{
+    background-color: black;
+}
+
+
+/* contact */
+
+form .form-control {
+    background-color: #212529 !important;
+    color: white !important;
+    border: 1px solid #212529; 
+}
+
+form .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.24); 
+}
+.colorBtn{
+    background-color: #20c997;
+    border:3px solid #20c997;
+}
+.colorBtn:hover{
+    background-color: #20c997;
+    border:3px solid #20c997;
+}
+
+
+.Project .CARD{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.Project .CARD img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 200px; 
+}
+
+.Project .layout {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.Project .layout h4,
+.Project .layout p {
+    flex-grow: 1;
+}
